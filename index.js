@@ -10,11 +10,11 @@ const examples = {
   'example1':
       'They stood together in the gloom of the spruces, an empty world glimmering about them wide and grey under the stars.',
   'example2':
-      'How mutable are our feelings, and how strange is that clinging love we have of life even in the excess of misery!',
+      'For this purpose I will preserve my life; to execute this dear revenge will I again behold the sun and tread the green herbage of earth, which otherwise should vanish from my eyes for ever.',
   'example3':
       'The moor was blue and the whole world looked as if something Magic had happened to it.',
   'example4':
-      'One ever feels his twoness,--an American, a Negro; two souls, two thoughts, two unreconciled strivings; two warring ideals in one dark body, whose dogged strength alone keeps it from being torn asunder.'      
+      'The history of the American Negro is the history of this strife,--this longing to attain self-conscious manhood, to merge his double self into a better and truer self.'      
 };
 
 function status(statusText) {
