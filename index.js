@@ -8,11 +8,13 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+      'They stood together in the gloom of the spruces, an empty world glimmering about them wide and grey under the stars.',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      'How mutable are our feelings, and how strange is that clinging love we have of life even in the excess of misery!',
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
+      'The moor was blue and the whole world looked as if something Magic had happened to it.',
+  'example4':
+      'One ever feels his twoness,--an American, a Negro; two souls, two thoughts, two unreconciled strivings; two warring ideals in one dark body, whose dogged strength alone keeps it from being torn asunder.'      
 };
 
 function status(statusText) {
