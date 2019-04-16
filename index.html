@@ -1,14 +1,21 @@
 
 <!doctype html>
-
-<body>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
   <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
     #textfield {
       font-size: 120%;
       width: 60%;
       height: 200px;
     }
   </style>
+</head>
+<body>
   <h1>
     Text Classification Model
   </h1>
@@ -45,11 +52,11 @@
     </select>
   </div>
   <div>
-    <textarea id="text-entry"></textarea>
+    <textarea id="text-entry" rows="5" cols="50"></textarea>
   </div>
   <hr>
   <div>
-    <span id="status">Standing by.</span>
+    <span id="status">Standing by...</span>
   </div>
 
   <script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js'></script>

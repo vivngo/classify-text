@@ -17,9 +17,16 @@ const examples = {
       'The history of the American Negro is the history of this strife,--this longing to attain self-conscious manhood, to merge his double self into a better and truer self.'      
 };
 
+const booknames = [
+  'Ethan Frome',
+  'Frankenstein',
+  'The Secret Garden',
+  'The Souls of Black Folk'
+];
+
 function status(statusText) {
   console.log(statusText);
-  document.getElementById('status').textContent = statusText;
+  document.getElementById('status').innerHTML = statusText;
 }
 
 function showMetadata(metadataJSON) {
@@ -47,13 +54,15 @@ function disableLoadModelButtons() {
 function doPredict(predict) {
   const textField = document.getElementById('text-entry');
   const result = predict(textField.value);
-  score_string = "Class scores: ";
+  score_string = "<strong>Class scores:</strong>\n<ol>";
   for (var x in result.score) {
-    score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
+    score_string += "<li>" + booknames[x]
+    score_string += " ->  " + result.score[x].toFixed(3) + "</li>\n"
   }
+  score_string += "</ol>\n"
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
+      score_string + '<i>(time elapsed: ' + result.elapsed.toFixed(3) + ' ms)</i>');
 }
 
 function prepUI(predict) {
@@ -156,7 +165,7 @@ async function setup() {
     button.style.display = 'inline-block';
   }
 
-  status('Standing by.');
+  status('Standing by...');
 }
 
 setup();
